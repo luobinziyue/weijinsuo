@@ -1,0 +1,14 @@
+nav {
+  height: 50px;
+}
+nav > .container-fluid {
+  height: 100%;
+}
+nav > .container-fluid > .navbar-header {
+  height: 100%;
+}
+nav > .container-fluid > .navbar-header > .navbar-brand {
+  height: 100%;
+  display: block;
+  padding: 15px;
+}
