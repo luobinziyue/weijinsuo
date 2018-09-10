@@ -8,7 +8,7 @@ $(function() {
         console.log(totalWidth);
     })
     console.log(totalWidth);
-    ul.width(totalWidth);
+    ul.width(totalWidth)
 
 
 })
