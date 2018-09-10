@@ -1,0 +1,221 @@
+body {
+  height: 1500px;
+}
+header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+header .row {
+  height: 100%;
+  text-align: center;
+}
+header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #cccccc;
+}
+header .row > div:nth-of-type(-n+3) > .wjs_code {
+  display: block;
+  position: relative;
+}
+header .row > div:nth-of-type(-n+3) > .wjs_code > img {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #ccc;
+  border-top: none;
+}
+header .row > div:nth-of-type(-n+3) > .wjs_code:hover > img {
+  display: block;
+}
+header .row > div:last-of-type > .btn-danger {
+  background-color: #e92322;
+}
+header .row > div:last-of-type > .btn {
+  padding: 6px 15px;
+}
+.wjs_nav.navbar {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-toggle {
+  margin-top: 23px;
+}
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-brand > span {
+  font-size: 40px;
+}
+.wjs_nav .navbar-brand > span:first-of-type {
+  color: red;
+}
+.wjs_nav .navbar-brand > span:last-of-type {
+  color: #000;
+}
+.wjs_nav .navbar-nav a {
+  line-height: 50px;
+  font-size: 16px ;
+}
+.wjs_nav .navbar-nav a:hover,
+.wjs_nav .navbar-nav a:focus {
+  color: #777;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-nav .active > a,
+.wjs_nav .navbar-nav .active a:hover,
+.wjs_nav .navbar-nav .active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.info {
+  padding: 30px;
+}
+.info > .container > .row > div {
+  margin-top: 20px;
+}
+.info > .container > .row a:hover {
+  color: red;
+}
+.info > .container > .row a .wjs_icon {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.info > .container > .row a h4 {
+  font-size: 18px;
+}
+.info > .container > .row a p {
+  font-size: 14px;
+}
+.appointment {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.appointment .wjs_icon {
+  font-size: 18px;
+  vertical-align: middle;
+}
+.appointment .now {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.product {
+  width: 100%;
+  clear: both;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+.product .nav_top {
+  width: 100%;
+  overflow: hidden;
+}
+.product .nav_top .nav-tabs li {
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+.product .nav_top .nav-tabs li.active > a,
+.product .nav_top .nav-tabs li.active a:hover {
+  border: none;
+  background-color: #eeeeee;
+  border-bottom: 3px solid #e92322;
+}
+.product .nav_top .nav-tabs li > a {
+  line-height: 50px;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  background-color: transparent;
+}
+.product .nav_top .nav-tabs li > a:hover {
+  background-color: #eeeeee;
+  border-bottom: 3px solid #e92322;
+}
+.product .tab-content {
+  background-color: #eee;
+}
+.product .tab-content .pBox {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.product .tab-content .pBox .row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.product .tab-content .pBox .row > div:nth-of-type(2n) {
+  text-align: right;
+}
+.product .tab-content .pBox.active {
+  background-color: red;
+  color: #fff;
+}
+.product .tab-content .pBox.active .boxRight b,
+.product .tab-content .pBox.active .boxRight sub,
+.product .tab-content .pBox.active .boxRight p {
+  color: #fff;
+}
+.product .tab-content .pBox .boxLeft {
+  height: 100%;
+  font-size: 12px;
+  padding-top: 10px;
+  margin-right: 100px;
+}
+.product .tab-content .pBox .boxLeft > p {
+  text-align: center;
+  font-size: 16px;
+}
+.product .tab-content .pBox .boxRight {
+  width: 100px;
+  height: 150px;
+  padding-top: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  border-left: 1px dashed #cccccc;
+}
+.product .tab-content .pBox .boxRight > b {
+  font-size: 40px;
+  color: #e92322;
+}
+.product .tab-content .pBox .boxRight > sub {
+  color: #e92322;
+}
+.product .tab-content .pBox .boxRight::before,
+.product .tab-content .pBox .boxRight::after {
+  content: '';
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;
+  left: -6px;
+}
+.product .tab-content .pBox .boxRight::before {
+  top: 0;
+  transform: translateY(-50%);
+}
+.product .tab-content .pBox .boxRight::after {
+  bottom: 0;
+  transform: translateY(50%);
+}
+.product .tab-content .pBox .boxRight > .wjs_tip {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  transform: translate(-50%);
+}
+.product .tab-content .pBox .boxRight > .wjs_tip > span:first-of-type {
+  border: 1px solid red;
+  color: red;
+}
+.product .tab-content .pBox .boxRight > .wjs_tip > span:last-of-type {
+  border: 1px solid blue;
+  color: blue;
+}
