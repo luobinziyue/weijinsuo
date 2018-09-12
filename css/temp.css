@@ -219,3 +219,76 @@ header .row > div:last-of-type > .btn {
   border: 1px solid blue;
   color: blue;
 }
+.wjs_news {
+  padding: 20px;
+}
+.wjs_news .wjs_title {
+  line-height: 50px;
+  font-size: 25px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  margin-bottom: 0;
+}
+.wjs_news .wjs_title::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -4px;
+  right: 8px;
+  border: 1px solid #cccccc;
+}
+.wjs_news .newsLine {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 1px dashed #e92322;
+  left: 45px;
+  top: 0;
+}
+.wjs_news .nav-tabs {
+  border-bottom: none;
+  position: relative;
+}
+.wjs_news .nav-tabs > li {
+  display: block;
+  margin-bottom: 60px;
+}
+.wjs_news .nav-tabs > li.active a,
+.wjs_news .nav-tabs > li.active a:hover,
+.wjs_news .nav-tabs > li.active a:focus {
+  border: none;
+  background-color: #e92322;
+}
+.wjs_news .nav-tabs > li:last-of-type {
+  margin-bottom: 0;
+}
+.wjs_news .nav-tabs > li:hover a {
+  border: none;
+  background-color: #e92322;
+}
+.wjs_news .nav-tabs > li > a {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #cccccc;
+}
+.wjs_news .nav-tabs .wjs_icon {
+  font-size: 30px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wjs_news .nav-tabs li {
+    margin: 20px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wjs_news .nav-tabs li {
+    margin: 20px 0;
+    width: 25%;
+  }
+}

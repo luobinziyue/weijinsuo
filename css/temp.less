@@ -125,7 +125,7 @@ header {
     border-bottom: 1px dashed @baseColor;
   }
 }
-//标签页
+//标签页 产品块
 .product {
   width: 100%;
   clear:both;
@@ -252,5 +252,92 @@ header {
 
 
   }
+}
+//新闻块
+.wjs_news {
+  padding: 20px;
+
+  .wjs_title {
+      line-height: 50px;
+      font-size: 25px;
+      border-bottom: 1px solid #cccccc;
+      text-align: center;
+    margin-bottom: 0;
+    &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        position: absolute;
+        bottom: -4px;
+        right: 8px;
+        border: 1px solid #cccccc;
+      }
+    }
+  .newsLine {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    border-left: 1px dashed @baseColor;
+    left: 45px;
+    top: 0;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+    position: relative;
+    >li {
+      display: block;
+      margin-bottom: 60px;
+      //交集选择器&后不需要空格
+      &.active {
+        a,a:hover,a:focus {
+          border: none;
+          background-color: @baseColor;
+        }
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:hover {
+        a {
+          border: none;
+          background-color: @baseColor;
+        }
+      }
+      >a {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        border: none;
+        background-color: #cccccc;
+
+      }
+    }
+    .wjs_icon {
+      font-size: 30px;
+      color: #ffffff;
+
+    }
+
+    @media screen and (min-width: 768px ) and (max-width:992px){
+      li {
+        margin: 20px 30px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      li {
+        margin: 20px 0;
+        width: 25%;
+      }
+    }
+
+  }
+
+
+
 }
 

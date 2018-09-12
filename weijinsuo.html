@@ -439,14 +439,44 @@
     </div>
 </div>
 <!--新闻块-->
-<div class="news"></div>
+<div class="wjs_news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2 ">
+                <h3 class="wjs_title">全部新闻</h3>
+            </div>
+            <div class="col-md-1">
+                <!--根据此页面场景的需求，虚线用div表示比用伪元素要更适合-->
+                <div class="newsLine hidden-xs hidden-sm"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#global" aria-controls="global" role="tab" data-toggle="tab"><span class="wjs_icon wjs_icon_new01"></span></a></li>
+                    <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab"><span class="wjs_icon wjs_icon_new02"></span></a></li>
+                    <li role="presentation"><a href="#record" aria-controls="record" role="tab" data-toggle="tab"><span class="wjs_icon wjs_icon_new03"></span></a></li>
+                    <li role="presentation"><a href="#computer" aria-controls="computer" role="tab" data-toggle="tab"><span class="wjs_icon wjs_icon_new04"></span></a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="global">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="news">234</div>
+                    <div role="tabpanel" class="tab-pane" id="record">345</div>
+                    <div role="tabpanel" class="tab-pane" id="computer">456</div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <!--合作伙伴-->
 <div class="partner"></div>
 
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <script src="js/index.js"></script>
 <!-- 因为bootstrap是在jq的基础上运行的，所以要在jq的后面 -->
 </body>
